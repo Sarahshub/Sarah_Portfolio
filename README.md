@@ -7,14 +7,11 @@ Data science portfolio of larger projects
 
 **Keywords:** Reinforcement learning, Offline reinforcement learning, Deep learning, Q-learning, State space models, Feedforward network, LSTM, Behavioral Cloning, Time series, Dynamic, Non-linear, Control tasks, Expected calibration error, Kalman filter. 
 
-![alt text](https://github.com/Sarahshub/Sarah_Portfolio/blob/main/images/orl.PNG?raw=true)<br>
-
-
 **Process:**<br>
 In the project, a combined approach of reinforcement learning and offline reinforcement learning is used to solve for a target policy, collect data, train the environment dynamics models, and finally testing of the included models. The image below shows how Q-learning is used to solve for a target policy of the environment. Our agent consists of two policies; the one we try to learn and a greedy policy to ensure exploration and a learning function for updating our observed Q-values. The target policy is used to collect the data for behavioral cloning. For each time step per episode, a four tuple of (st, at, r, st+1) is collected. <br> 
 ![alt text](https://github.com/Sarahshub/Sarah_Portfolio/blob/main/images/q.PNG?raw=true)<br>
 
 **Models:**<br>
-A regular feedforward network and an LSTM model were included as baseline models for comparison. The models should map the right action to the given state from the environment. The feedforward network was fed random mini-batches with disregard for the sequence of the observations. The LSTM and Deep Kalman Filter were fed small sequences of different lengths to map the action to the state. The models were tested offline and online by deploying the trained models into the environments. The Deep Kalman Filter did display some properties which would be interesting to conduct further testing on. In the image below the models included for behavioral cloning are seen.<br>
+A regular feedforward network and an LSTM model were included as baseline models for comparison. The models should map the right action to the given state from the environment. The feedforward network was fed random mini-batches with disregard for the sequence of the observations. The LSTM and Deep Kalman Filter were fed small sequences of different lengths to map the action to the state. The models were tested offline and online by deploying the trained models into the environments. The Deep Kalman Filter did display some properties which would be interesting to conduct further testing on. In the image below the models included for behavioral cloning are seen. The whole project can be found in the repository.<br>
 ![alt text](https://github.com/Sarahshub/Sarah_Portfolio/blob/main/images/m.PNG?raw=true)<br>
 
